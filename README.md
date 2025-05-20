@@ -1,42 +1,59 @@
-🎬 yt-dlp API Server
+# yt-dlp API Server
 
-This is a simple API server built with Node.js and Express that integrates the functionality of yt-dlp to extract video information and available formats from YouTube links.
+This is a simple API server built with Node.js and Express that integrates the functionality of yt-dlp to extract video information and formats from YouTube links.
 
-✨ Features
+## Features
 
-Retrieve detailed information about YouTube videos. 
+- Extract YouTube video information.
+- Get available formats (video and audio) for any given YouTube URL.
+- Supports multiple formats including MP4, WebM, and audio formats.
 
-Fetch available formats (video and audio) for any YouTube URL. 
+## Setup
 
-Support for multiple formats, including MP4, WebM, and various audio formats.
+### Prerequisites
 
-📋 Prerequisites
+Make sure you have the following installed:
 
-Ensure the following are installed before setting up:
+- [Node.js](https://nodejs.org/en/) (v16 or higher)
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) (installed globally)
 
-Node.js (version 16 or higher) 
+### Installation
 
-yt-dlp (installed globally via npm install -g yt-dlp or equivalent)
+1. Clone this repository to your local machine.
 
-📥 Installation
+    ```bash
+    git clone https://github.com/your-username/yt-dlp-api-server.git
+    cd yt-dlp-api-server
+    ```
 
-Clone the Repository
-Clone this repository to your local machine: 
+2. Install dependencies:
 
-git clone https://github.com/your-username/yt-dlp-api-server.git cd yt-dlp-api-server 
+    ```bash
+    npm install
+    ```
 
-Install Dependencies
-Install the required Node.js packages: 
+3. Create a `.env` file and add any required environment variables.
 
-npm install 
+4. Start the server:
 
-Configure Environment Variables
-Create a .env file in the root directory and add any necessary environment variables (e.g., port number or API keys if needed).
-Example .env: 
+    ```bash
+    npm start
+    ```
 
-PORT=3000 
+   The server will now be running at `http://localhost:3000`.
 
-Start the Server
+## API Endpoints
+
+### `GET /info`
+
+Returns API version information.
+
+Example response:
+
+```json
+{
+  "version": "1.0.0"
+}
 Run the server with: 
 
 npm start 
