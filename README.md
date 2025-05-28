@@ -83,7 +83,7 @@ Response:
 ```
 
 📜 License
-This project is licensed under the MIT License - .[see the LICENSE file for details](https://github.com/SQSh1/yt-dlp-api-server/blob/main/License)
+# .[MIT License](https://github.com/SQSh1/yt-dlp-api-server/blob/main/License)
 
 ⭐ Support
 If you find this project helpful, please give it a ⭐ on GitHub and share it with your friends! 🌟
